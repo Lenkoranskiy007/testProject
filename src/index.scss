@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  font-family: 'Roboto', -apple-system, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: url(assets/1x/Resurs.png) 0 0/1280px 800px no-repeat;
+  overflow-x: hidden;
+}
+
+// img {
+//   width: 100%; // fallback
+//   width: calc(100% / var(--n));
+//   user-select: none;
+//   pointer-events: none;
+// }
+
+.container {
+  --n: 1;
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  width: 100%; // fallback
+  width: calc(var(--n) * 100%);
+  height: 50vw;
+  max-height: 100vh;
+  transform: translate(calc(var(--i, 0) / var(--n) * -100%));
+  transition: transform 0.5s ease-out;
+
+  .test__logo {
+    .logo__img {
+      position: absolute;
+      position: fixed;
+      width: 130px;
+      height: 23px;
+      left: 70px;
+      top: 20px;
+      cursor: pointer;
+    }
+
+    .logo__shape {
+      position: absolute;
+      width: 50px;
+      height: 12px;
+      bottom: 20px;
+      left: 40px;
+    }
+  }
+
+  .test__main__images {
+    .resurs1 {
+      width: 120px;
+      height: 90px;
+      position: absolute;
+      top: 58px;
+      right: 1160px;
+    }
+    .resurs2 {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      right: 300px;
+      top: 60px;
+    }
+    .resurs3 {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      right: 70px;
+      top: 30px;
+    }
+    .resurs4 {
+      width: 650px;
+      height: 90px;
+      position: absolute;
+      left: 600px;
+      top: 145px;
+    }
+
+    .resurs5 {
+      width: 120px;
+      height: 110px;
+      position: absolute;
+      right: 90px;
+      top: 170px;
+    }
+
+    .resurs6 {
+      width: 90px;
+      height: 85px;
+      position: absolute;
+      left: 30px;
+      bottom: 140px;
+    }
+
+    .resurs7 {
+      width: 320px;
+      height: 168px;
+      position: absolute;
+      bottom: 0;
+    }
+    .resurs8 {
+      width: 80px;
+      height: 80px;
+      position: absolute;
+      bottom: 70px;
+      left: 410px;
+    }
+    .resurs9 {
+      width: 200px;
+      height: 100px;
+      position: absolute;
+      right: 270px;
+      bottom: 0;
+    }
+  }
+
+  .test__title {
+    .title__hi {
+      position: absolute;
+      top: 35px;
+      left: 150px;
+      font-size: 48px;
+      line-height: 220px;
+      letter-spacing: 1.62px;
+      color: #242424;
+    }
+
+    .title__commerce {
+      position: absolute;
+      left: 147px;
+      top: 180px;
+      font-size: 108px;
+      line-height: 104px;
+      letter-spacing: 10.9px;
+      color: #171717;
+      color: rgb(23, 23, 23);
+      img {
+        width: 300px;
+        height: 78px;
+        margin-left: 45px;
+        cursor: pointer;
+        &:hover {
+          color: green;
+        }
+      }
+    }
+  }
+
+  .test2__main {
+    background: url(assets/1x/Bg2.png);
+  }
+}

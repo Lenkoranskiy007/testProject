@@ -6,22 +6,32 @@
   font-family: 'Roboto', -apple-system, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
 }
 
-body {
-  background: url(assets/1x/Resurs.png) 0 0/1280px 800px no-repeat;
-  overflow-x: hidden;
-}
+.test__logo {
+  .logo__img {
+    position: fixed;
+    width: 130px;
+    height: 23px;
+    left: 70px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
 
-// img {
-//   width: 100%; // fallback
-//   width: calc(100% / var(--n));
-//   user-select: none;
-//   pointer-events: none;
-// }
+  .logo__shape {
+    position: fixed;
+    width: 50px;
+    height: 12px;
+    bottom: 20px;
+    left: 40px;
+  }
+}
 
 .container {
   --n: 1;
+  --i: 0;
   display: flex;
   align-items: center;
   overflow-y: hidden;
@@ -32,45 +42,69 @@ body {
   transform: translate(calc(var(--i, 0) / var(--n) * -100%));
   transition: transform 0.5s ease-out;
 
-  .test__logo {
-    .logo__img {
-      position: absolute;
-      position: fixed;
-      width: 130px;
-      height: 23px;
-      left: 70px;
-      top: 20px;
-      cursor: pointer;
-    }
-
-    .logo__shape {
-      position: absolute;
-      width: 50px;
-      height: 12px;
-      bottom: 20px;
-      left: 40px;
-    }
+  .page {
+    height: 100%;
+    width: 100%; // fallback
+    width: calc(100% / var(--n));
+    user-select: none;
+    pointer-events: none;
   }
+}
+.main1 {
+  height: 100%;
+  width: 100%; // fallback
+  background: url('./assets/1x/Resurs.png') no-repeat;
 
-  .test__main__images {
+  .test__main__body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .title__hi {
+      position: absolute;
+      top: 35px;
+      left: 150px;
+      font-size: 48px;
+      line-height: 220px;
+      letter-spacing: 1.62px;
+      color: #242424;
+    }
+
+    .title__commerce {
+      position: absolute;
+      left: 147px;
+      top: 180px;
+      font-size: 108px;
+      line-height: 104px;
+      letter-spacing: 10.9px;
+      color: #171717;
+      color: rgb(23, 23, 23);
+      img {
+        width: 300px;
+        height: 78px;
+        margin-left: 45px;
+        cursor: pointer;
+        &:hover {
+          color: green;
+        }
+      }
+    }
     .resurs1 {
+      position: absolute;
       width: 120px;
       height: 90px;
-      position: absolute;
       top: 58px;
-      right: 1160px;
     }
     .resurs2 {
+      position: absolute;
       width: 80px;
       height: 80px;
-      position: absolute;
       right: 300px;
       top: 60px;
     }
     .resurs3 {
+      position: absolute;
       width: 80px;
       height: 80px;
-      position: absolute;
       right: 70px;
       top: 30px;
     }
@@ -119,40 +153,34 @@ body {
       bottom: 0;
     }
   }
+}
+.main2 {
+  height: 100%;
+  width: 100%; // fallback
+  background: url('./assets/1x/Bg2.png') no-repeat;
 
-  .test__title {
-    .title__hi {
+  .test__main2__body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .resurs2 {
       position: absolute;
-      top: 35px;
-      left: 150px;
-      font-size: 48px;
-      line-height: 220px;
-      letter-spacing: 1.62px;
-      color: #242424;
+      width: 500px;
+      right: 0;
     }
 
-    .title__commerce {
+    .resurs1 {
       position: absolute;
-      left: 147px;
-      top: 180px;
-      font-size: 108px;
-      line-height: 104px;
-      letter-spacing: 10.9px;
-      color: #171717;
-      color: rgb(23, 23, 23);
-      img {
-        width: 300px;
-        height: 78px;
-        margin-left: 45px;
-        cursor: pointer;
-        &:hover {
-          color: green;
-        }
-      }
+      width: 200px;
+      top: 400;
+      right: 0;
     }
   }
+}
 
-  .test2__main {
-    background: url(assets/1x/Bg2.png);
-  }
+.main3 {
+  height: 100%;
+  width: 100%; // fallback
+  background: url('./assets/1x/bg3.png') no-repeat;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {useEffect } from 'react'
 import './index.scss'
 import OnPoin from './assets/1x/OnPoint.png'
 import Logo from './assets/1x/Logo.png'
@@ -17,12 +17,6 @@ import Resurs2Main2 from './assets/1x/Main2/Resurs2Main2.png'
 import Resurs3Main2 from './assets/1x/Main2/Resurs3Main2.png'
 import Resurs4Main2 from './assets/1x/Main2/Resurs4Main2.png'
 import Resurs5Main2 from './assets/1x/Main2/Resurs5Main2.png'
-
-
-
-
-
-
 
 
 
@@ -79,15 +73,12 @@ useEffect(() => {
 }
 
 
-
 const Main1 = () => {
   //Отрисовка всех компонентов главной страницы
   return <div className="page">
   <div className="main1">
   <ImagesGroupMain1/>
   </div>
-  
-  
   </div>
 }
 
@@ -103,8 +94,8 @@ const Main2 = () => {
 const Main3  = () => {
   return <div className="page">
     <div className="main3">
-    </div>
 
+    </div>
   </div>
 }
 
@@ -125,14 +116,42 @@ const Main1Title = () => {
    <div className="title__commerce">
    ЭТО НЕ КОММЕРЧЕСКОЕ ЗАДАНИЕ 
     <img src={ButtonNext} alt=""/>
-
    </div>
    <div>
-     
    </div>
-   
  </div>
 }
+
+
+const Main2Title = () => {
+  return <div className="test2__title">
+  <div className="title__text">Текст </div>
+  <div className="title__message">Cообщения </div>
+
+  </div>
+}
+
+const PopupMain2 = () => {
+  return <div className="popup">
+    <div className="popup__body">
+        <p className="popup__title">
+        <b>Lorem ipsum dolor sit amet ,</b> consectetur adipisicing elit. Vero, est numquam quo autem quibusdam pariatur delectus nemo facere dolor quis perferendis obcaecati aliquam ipsum, eos cumque quasi eveniet cupiditate ullam error quos hic. Sequi ratione saepe, molestias laborum eveniet libero quo accusantium illum odit cumque, eligendi temporibus ab. Et voluptatum tempora est accusamus quibusdam. Tenetur, iure, quo explicabo non vero hic, ipsam inventore temporibus suscipit asperiores sequi? Aut voluptatem repellat itaque debitis voluptates, delectus tempore, aperiam quos molestiae esse architecto molestias perspiciatis dolorem tenetur mollitia quasi, officia sapiente beatae fugiat eveniet est voluptate iusto eligendi dolore? Similique excepturi est perspiciatis quasi, tempora dolores commodi aspernatur. Labore minima quae voluptate quasi magnam quos neque voluptates quidem quisquam aliquam! Quas ipsum quia blanditiis tempore non necessitatibus quae facilis fugit excepturi dicta veritatis libero ullam tenetur temporibus dolores, error voluptas nobis aliquam sequi. Eligendi cumque voluptatum saepe, voluptates qui ut quam eaque a sequi minima exercitationem sed sint doloremque, illum aliquam omnis tenetur temporibus? Ratione dignissimos, accusantium doloribus quisquam sunt nam, facilis ex tempore, quasi nobis non exercitationem totam unde perferendis quo? Laborum quisquam voluptate natus, blanditiis est dolores ipsa corrupti reiciendis facere tempore autem commodi consequuntur quibusdam a? Officiis eaque aspernatur blanditiis?
+        </p>
+     
+     
+
+    </div>
+  </div>
+
+
+  
+}
+
+
+
+
+
+
 
 
 const ImagesGroupMain1 = () => {
@@ -148,19 +167,23 @@ const ImagesGroupMain1 = () => {
   <img className="resurs7" src={Resurs7} alt=""/>  
   <img className="resurs8" src={Resurs8} alt=""/>  
   <img className="resurs9" src={Resurs9} alt=""/>  
-
   </div>  
 }
 
 const ImagesGroupMain2 = () => {
+    // Отрисовываю изображения второй страницы  страницы 
   return <div className="test__main2__body">
- <img className="resurs1" src={Resurs1Main2} alt=""/>
- <img className="resurs2" src={Resurs2Main2} alt=""/>
- {/* <img className="resurs3" src={Resurs3Main2} alt=""/>
- <img className="resurs4" src={Resurs4Main2} alt=""/>
- <img className="resurs5" src={Resurs5Main2} alt=""/> */}
+    <Main2Title/>
+    <PopupMain2/>
+  <img className="resurs1Main2" src={Resurs1Main2} alt=""/>
+ <img className="resurs3Main2" src={Resurs3Main2} alt=""/>
+ <img className="resurs2Main2" src={Resurs2Main2} alt=""/>
+ <img className="resurs4Main2" src={Resurs4Main2} alt=""/>
+ <img className="resurs5Main2" src={Resurs5Main2} alt=""/>
   </div>
 }
+
+
 
 
 
